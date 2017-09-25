@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserDefaults" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-qW-NCM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMb-Yh-R9j">
+                                        <rect key="frame" x="173" y="118" width="30" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="61" id="02x-sM-zMm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="47"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZ3-Sk-dpO">
+                                        <rect key="frame" x="144" y="296" width="86" height="74"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="45"/>
+                                        <state key="normal" title="TAP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapbtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tbx-zC-hBC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9c-gz-7E8">
+                                        <rect key="frame" x="216" y="585" width="151" height="74"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="151" id="gfF-dg-zGa"/>
+                                            <constraint firstAttribute="height" constant="74" id="xzA-YI-EJz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="45"/>
+                                        <state key="normal" title="RESET">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="resetbtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LOL-fu-kVi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KMb-Yh-R9j" firstAttribute="centerX" secondItem="rPN-qW-NCM" secondAttribute="centerX" id="BnJ-Ni-qhA"/>
+                                    <constraint firstAttribute="bottom" secondItem="Y9c-gz-7E8" secondAttribute="bottom" constant="8" id="Mvq-oc-MCs"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y9c-gz-7E8" secondAttribute="trailing" constant="8" id="PMg-lD-amN"/>
+                                    <constraint firstItem="cZ3-Sk-dpO" firstAttribute="centerX" secondItem="rPN-qW-NCM" secondAttribute="centerX" id="YZ8-Vc-yhj"/>
+                                    <constraint firstItem="KMb-Yh-R9j" firstAttribute="top" secondItem="rPN-qW-NCM" secondAttribute="top" constant="118" id="y40-fc-uT6"/>
+                                    <constraint firstItem="cZ3-Sk-dpO" firstAttribute="centerY" secondItem="rPN-qW-NCM" secondAttribute="centerY" id="ylA-hf-Das"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rPN-qW-NCM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="18Y-QL-jDU"/>
+                            <constraint firstItem="rPN-qW-NCM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Odk-1u-Sa6"/>
+                            <constraint firstItem="rPN-qW-NCM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g0w-Ac-C5m"/>
+                            <constraint firstItem="rPN-qW-NCM" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qDU-K0-Pfr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tapLbl" destination="KMb-Yh-R9j" id="vMt-w0-QHD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
